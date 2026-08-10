@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Programming for Problem Solving — 25CS11001 | Course Notes</title>
+<meta name="description" content="Unit-wise study notes for Digital Forensics (25CS11001), B.Tech CSE (AIML), AR22, Geethanjali College of Engineering and Technology.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#EDF0F3; --panel:#ffffff; --ink:#0F1620; --ink2:#374350; --ink3:#5A6673;
+  --rule:#D4DBE2; --amber:#E9B949; --custody:#23456E;
+  --sans:'Archivo',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --serif:'Source Serif 4',Georgia,'Times New Roman',serif;
+  --mono:'IBM Plex Mono',ui-monospace,Menlo,monospace;
+}
+*,*::before,*::after{box-sizing:border-box}
+@media (prefers-reduced-motion:reduce){*{transition-duration:.001ms!important}}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--serif);font-size:17px;line-height:1.62}
+:focus-visible{outline:3px solid var(--custody);outline-offset:3px;border-radius:3px}
+
+.hero{background:var(--ink);color:#E7EDF3;
+  padding:clamp(2.5rem,7vw,5rem) clamp(1.2rem,5vw,3rem);position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:0;pointer-events:none;
+  background-image:repeating-linear-gradient(90deg,rgba(255,255,255,.035) 0 1px,transparent 1px 46px)}
+.in{max-width:920px;margin:0 auto;position:relative;z-index:1}
+.filebar{display:flex;flex-wrap:wrap;gap:.5rem .9rem;align-items:center;
+  font-family:var(--mono);font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;
+  color:#A2B0C0;border-bottom:1px solid #26303C;padding-bottom:.8rem;margin-bottom:1.6rem}
+.stamp{background:var(--amber);color:var(--ink);padding:.2rem .5rem;
+  border-radius:2px;font-weight:600;letter-spacing:.1em}
+h1{font-family:var(--sans);font-weight:800;font-size:clamp(2rem,5.5vw,3.4rem);
+  line-height:1.05;letter-spacing:-.028em;margin:0 0 1rem;color:#fff}
+.lede{color:#B7C4D2;max-width:58ch;margin:0}
+
+main{max-width:920px;margin:0 auto;padding:clamp(2rem,5vw,3.5rem) clamp(1.2rem,5vw,3rem) 5rem}
+h2{font-family:var(--mono);font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--ink3);font-weight:500;margin:0 0 1.2rem}
+.units{display:grid;gap:1rem}
+.unit{display:block;background:var(--panel);border:1px solid var(--rule);border-radius:6px;
+  padding:1.3rem 1.4rem;text-decoration:none;color:inherit;
+  transition:border-color .18s,transform .18s,box-shadow .18s}
+.unit:hover{border-color:var(--custody);transform:translateY(-2px);
+  box-shadow:0 6px 20px rgba(15,22,32,.09)}
+.unit .no{font-family:var(--mono);font-size:.68rem;letter-spacing:.13em;
+  text-transform:uppercase;color:#8F6206}
+.unit h3{font-family:var(--sans);font-weight:700;font-size:1.25rem;
+  letter-spacing:-.015em;margin:.35rem 0 .4rem;line-height:1.2}
+.unit p{margin:0;color:var(--ink2);font-size:.96rem}
+.unit .go{display:inline-block;margin-top:.7rem;font-family:var(--sans);
+  font-weight:600;font-size:.84rem;color:var(--custody)}
+.soon{opacity:.6}
+.soon .go{color:var(--ink3)}
+
+footer{border-top:1px solid var(--rule);margin-top:3rem;padding-top:1.5rem;
+  font-family:var(--mono);font-size:.7rem;line-height:1.9;color:var(--ink3)}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="in">
+    <div class="filebar">
+      <span class="stamp">Course Notes</span>
+      <span>25CS11001</span>
+      <span>B.Tech CSE (AIML) &middot; I Year I Sem &middot; AR25</span>
+    </div>
+    <h1>Programming for Problem Solving</h1>
+    <p class="lede">Unit-wise study notes, written in plain language and traced through real cases. Pick a unit to begin.</p>
+  </div>
+</header>
+
+<main>
+  <h2>Units</h2>
+  <div class="units">
+    <a class="unit" href="unit-1/">
+      <span class="no">Unit I</span>
+      <h3>Logic Building, C Fundamentals, Operators &amp; Expressions</h3>
+      <p>Twenty topics plus a worked-examples laboratory: 12 mathematical problems, 10 operator examples and 10 precedence problems — each with algorithm, pseudocode, instruction-by-instruction tracing with memory addresses, and a C code editor. Includes Dev-C++ and Ubuntu execution side by side.</p>
+      <span class="go">Open Unit I &rarr;</span>
+    </a>
+
+    <a class="unit" href="unit-2/">
+      <span class="no">Unit II</span>
+      <h3>Control Statements: Selection, Loops and Jumps</h3>
+      <p>Twelve topics plus 26 worked examples: if, if-else, nested if and the else-if ladder, switch, the while, for and do-while loops, nested loops, and break, continue and goto — with iteration-by-iteration tracing and a live C runner.</p>
+      <span class="go">Open Unit II &rarr;</span>
+    </a>
+
+    <a class="unit" href="unit-3/">
+      <span class="no">Unit III</span>
+      <h3>Functions and Program Structure</h3>
+      <p>Twelve topics plus 74 worked examples: user-defined functions, prototypes, inter-function communication and call by value, scope and lifetime, the four storage classes, type qualifiers, the C preprocessor and recursion — with call-stack tracing and a live C runner.</p>
+      <span class="go">Open Unit III &rarr;</span>
+    </a>
+
+    <a class="unit" href="unit-4/">
+      <span class="no">Unit IV</span>
+      <h3>Arrays, Searching and Sorting</h3>
+      <p>Twelve topics plus 74 worked examples: declaring and referencing arrays, subscripts, array arguments, linear and binary search, bubble, selection and insertion sort, two-dimensional arrays and matrix operations — with pass-by-pass tracing and a live C runner.</p>
+      <span class="go">Open Unit IV &rarr;</span>
+    </a>
+
+    <a class="unit" href="unit-5/">
+      <span class="no">Unit V</span>
+      <h3>Pointers and Strings</h3>
+      <p>Twelve topics plus 74 worked examples: pointers and addresses, pointer types, function arguments, pointers and arrays, address arithmetic, arrays of pointers, pointers to pointers, dynamic memory allocation and C strings — with address-level tracing and a live C runner.</p>
+      <span class="go">Open Unit V &rarr;</span>
+    </a>
+  </div>
+
+  <footer>
+    Prescribed text: Hanly &amp; Koffman, <i>Problem Solving and Program Design in C</i> &middot; Forouzan &amp; Gilberg, <i>Computer Science: A Structured Programming Approach Using C</i>.<br>
+    Geethanjali College of Engineering and Technology &middot; Cheeryal (V), Keesara (M), Medchal Dist.
+  </footer>
+</main>
+
+</body>
+</html>
